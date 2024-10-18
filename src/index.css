@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  overflow-x: hidden;
+   font-family: "Outfit", sans-serif;
+}
+.cart{
+  position: absolute;
+  top:-15px;
+  right: -10px;
+}
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+
+
+ @media only screen and (max-width: 768px) {
+.cart{
+  position: absolute;
+  top: 10;
+  left: 15px;
+  
+}
+}
